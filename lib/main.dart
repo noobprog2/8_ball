@@ -2,7 +2,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
-      MaterialApp( origin
+      MaterialApp(
         home: BallPage(),
       ),
     );
@@ -33,7 +33,7 @@ class _BallState extends State<Ball> {
   Widget build(BuildContext context) {
     return Center(
       //hello
-      child: FlatButton(
+      child: TextButton(
         onPressed: () {
           setState(() {
             ballNumber = Random().nextInt(5) + 1;
